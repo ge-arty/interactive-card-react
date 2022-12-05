@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Front() {
+export default function Front(props) {
   return (
     <div className="front-card">
       <div className="decoration-box">
@@ -8,10 +8,16 @@ export default function Front() {
         <div className="second-circle"></div>
       </div>
       <div className="card-info">
-        <p className="card-number-value">00000000000000</p>
+        <p className="card-number-value">
+          {props.cardNumber == "" ? "0000 0000 0000 0000" : props.cardNumber}
+        </p>
         <div className="card-info-owner">
-          <p className="owner">0000000000</p>
-          <p className="card-date">000000</p>
+          <p className="owner">
+            {props.owner == "" ? "JANE APPLESEED" : props.owner}
+          </p>
+          <p className="card-date">
+            {props.month}/{props.year}
+          </p>
         </div>
       </div>
     </div>
