@@ -16,7 +16,8 @@ export default function Front(props) {
             {props.owner == "" ? "JANE APPLESEED" : props.owner}
           </p>
           <p className="card-date">
-            {props.month}/{props.year}
+            {props.month == "" ? "00" : props.month}/
+            {props.year == "" ? "00" : props.year}
           </p>
         </div>
       </div>

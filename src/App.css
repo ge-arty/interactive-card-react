@@ -218,3 +218,32 @@ input::placeholder {
   margin-top: 55px;
   cursor: pointer;
 }
+.registred-container {
+  width: 100%;
+  max-width: 957px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registred-box {
+  width: 100%;
+  max-width: 381px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.registred-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35.73px;
+  color: #21092f;
+  margin-top: 35px;
+}
+.registred-text {
+  margin-top: 16px;
+  color: #8f8694;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
